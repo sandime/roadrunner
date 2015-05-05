@@ -22,13 +22,12 @@ app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     next();
 });
-//test
+/*test
 app.use('/hello', function (req, res, next){
     res.send('Hellowwwwwww');
     next();
 });
-
-//end test
+end test */
 
 // Connect to MongoDB (localhost or url server)
 mongoose.connect('mongodb://localhost/roadrunner');
